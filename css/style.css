@@ -1696,6 +1696,13 @@ img.mfp-img {
 		@media only screen and (max-width: 575px) {
 			.call-to-action__title {
 				font-size: 24px; } }
+	.call-to-action__title_2 {
+		font-size: 30px;
+		margin-bottom: 30px; }
+		@media only screen and (max-width: 575px) {
+			.call-to-action__title {
+				font-size: 24px; } }
+
 	.call-to-action__text {
 		margin-bottom: 24px; }
 
