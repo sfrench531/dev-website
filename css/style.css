@@ -408,7 +408,7 @@ address {
 	.btn--wide {
 		width: 100%; }
 	.btn--dark:hover, .btn--dark:focus, .btn--white:hover, .btn--white:focus, .btn--light:hover, .btn--light:focus {
-		background-color: #FA6262;
+		background-color: #99CCCC;
 		border-color: transparent; }
 	.btn i {
 		font-size: 12px;
@@ -2349,16 +2349,16 @@ figcaption {
 		.nav__menu > li > a {
 			font-family: "Roboto", sans-serif;
 			font-weight: 700;
-			color: #333B69;
+			color: #013838;
 			font-size: 15px;
 			padding: 0 17px;
 			line-height: 72px;
 			display: block;
 			position: relative; }
 			.nav__menu > li > a:hover {
-				color: #FA6262; }
+				color: #99CCCC; }
 		.nav__menu > .active > a {
-			color: #FA6262; }
+			color: #99CCCC; }
 	@media only screen and (min-width: 992px) {
 		.nav__wrap {
 			display: block !important;
