@@ -352,7 +352,7 @@ address {
 	border-radius: 5px;
 	transition: all 0.2s ease-in-out;
 	color: #fff;
-	background-color: #FA6262;
+	background-color: #99CCCC;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: relative;
@@ -386,7 +386,7 @@ address {
 	.btn--md.btn--button {
 		height: 46px; }
 	.btn--color {
-		background-color: #FA6262;
+		background-color: #99CCCC;
 		box-shadow: 0 5px 15px rgba(250, 98, 98, 0.4); }
 		.btn--color:hover {
 			opacity: .92;
