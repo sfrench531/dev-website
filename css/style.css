@@ -3427,7 +3427,7 @@ dd {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: #4C86E7;
+	background-color: #99CCCC;
 	transition: all 0.2s ease-in-out; }
 
 .hover-line:hover:before {
