@@ -3358,7 +3358,7 @@ dd {
 	background-color: #fff; }
 
 .bg-color {
-	background-color: #013838; }
+	background-color: #99CCCC; }
 
 .white {
 	color: #fff; }
@@ -3473,7 +3473,7 @@ dd {
 	/* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 	/* IE6-9 */ }
-
+	
 .bg-color-overlay:before {
 	content: "";
 	display: block;
@@ -3482,7 +3482,7 @@ dd {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(76, 134, 231, 0.87); }
+	background-color: #99CCCC; }
 
 .bg-color-overlay--1:before {
 	background-color: rgba(51, 59, 105, 0.36); }
