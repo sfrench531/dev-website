@@ -67,11 +67,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: #FA6262;
+	color: #033838;
 	transition: color 0.1s ease-in-out; }
 	a:hover, a:focus {
-		text-decoration: none;
-		color: #333B69; }
+		text-decoration: underline;
+		color: #FA6262; }
 
 p {
 	font-size: 15px;
@@ -186,7 +186,7 @@ h6 {
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 	color: inherit; }
 	h1 > a:hover, h1 > a:focus, h2 > a:hover, h2 > a:focus, h3 > a:hover, h3 > a:focus, h4 > a:hover, h4 > a:focus, h5 > a:hover, h5 > a:focus, h6 > a:hover, h6 > a:focus {
-		color: #FA6262; }
+		color: #033838; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 	color: #333B69;
@@ -3473,7 +3473,7 @@ dd {
 	/* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 	/* IE6-9 */ }
-	
+
 .bg-color-overlay:before {
 	content: "";
 	display: block;
