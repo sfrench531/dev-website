@@ -70,7 +70,7 @@ a {
 	color: #033838;
 	transition: color 0.1s ease-in-out; }
 	a:hover, a:focus {
-		text-decoration: underline;
+		text-decoration: none;
 		color: #FA6262; }
 
 p {
