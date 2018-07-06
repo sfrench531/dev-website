@@ -356,14 +356,62 @@
       <!-- CTA -->
       <div class="call-to-action text-center" id="contact">
         <div class="call-to-action__container">
-          <h3 class="call-to-action__title">
+          <p class="subtitle">
             Do you have other questions? We have other answers.
           </h3>
-          <a href="#" class="btn btn--lg btn--color">
-            <span>Email Us</span>
-          </a>
+          <h3 class="call-to-action__title">
+            Contact Us
+          </h3>
+
         </div>                
-      </div> <!-- end cta -->      
+      </div> <!-- end cta --> 
+
+       <!-- Contact -->
+      <section class="section-wrap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="contact box-shadow-large offset-top-171">
+                <ul class="contact__items">
+                  <li class="contact__item">
+                    <address>701 Rio Grande St. Ste. C Austin, Texas 78701</address>
+                  </li>
+                  <li class="contact__item">
+                    <span class="contact__item-label">Email: </span>
+                    <a href="mailto:team@muxy.io">team@muxy.com</a>
+                  </li>
+                </ul>    
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form mt-30 mb-30" method="post" action="#">
+                  <div class="row row-30">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="name">Name <abbr title="required" class="required">*</abbr></label>
+                        <input name="name" id="name" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="email">Email <abbr title="required" class="required">*</abbr></label>
+                        <input name="email" id="email" type="email">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-message">
+                    <label for="message">Message <abbr title="required" class="required">*</abbr></label>
+                    <textarea id="message" name="message" rows="7" required="required"></textarea>
+                  </div>
+
+                  <input type="submit" class="btn btn--lg btn--color btn--wide btn--button" value="Send Message" id="submit-message">
+                  <div id="msg" class="message"></div>
+                </form>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section> <!-- end contact -->     
 
       <!-- Footer -->
       <footer class="footer">
