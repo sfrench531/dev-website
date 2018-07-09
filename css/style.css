@@ -279,6 +279,13 @@ address {
 		@media only screen and (max-width: 767px) {
 			.section-wrap--pb-large {
 				padding-bottom: 60px; } }
+	
+	.section-wrap--pb-small {
+		padding-bottom: 50px; }
+		@media only screen and (max-width: 767px) {
+			.section-wrap--pb-small {
+				padding-bottom: 60px; } }
+
 
 .container-semi-fluid {
 	padding: 0 50px; }
@@ -3360,6 +3367,9 @@ dd {
 
 .bg-color {
 	background-color: #99CCCC; }
+
+.bg-color2 {
+	background-color: rgba(153,204,204,0.75); }
 
 .white {
 	color: #fff; }
