@@ -1,3 +1,2 @@
 # dev-website
-html/css website for devs
-more text later...
+HTML/CSS for company website that will no longer require WordPress. 
