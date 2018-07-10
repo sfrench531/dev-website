@@ -1996,21 +1996,22 @@ img.mfp-img {
 	position: relative; }
 
 .cc-window {
-	background-color: #333B69 !important;
+	background-color: #E6E7E8 !important;
 	padding: 5px 20px !important; }
 
 .cc-message {
 	margin-right: 20px;
 	flex: 0 1 auto !important;
-	color: #fff;
+	color: #013838;
 	font-weight: 500;
 	font-size: 15px; }
 
 .cc-link {
 	opacity: 1;
-	font-weight: 700; }
+	font-weight: 700;
+	text-decoration: none; }
 	.cc-link:hover, .cc-link:focus {
-		color: #fff; }
+		color: #699C9C; }
 
 a.cc-btn.cc-dismiss {
 	background-color: #FA6262;
