@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   content: {
     header: 'Cookies used on the website!',
-    message: 'We are using cookies to personalize content and ads to make our site easier for you to use.',
+    message: 'We are using cookies to collect anonymous analytics data to help us improve our website.',
     dismiss: 'Confirm',
     allow: 'Allow cookies',
     deny: 'Decline',

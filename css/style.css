@@ -1996,13 +1996,13 @@ img.mfp-img {
 	position: relative; }
 
 .cc-window {
-	background-color: #333B69 !important;
+	background-color: #BCBEC0 !important;
 	padding: 5px 20px !important; }
 
 .cc-message {
 	margin-right: 20px;
 	flex: 0 1 auto !important;
-	color: #fff;
+	color: #013838;
 	font-weight: 500;
 	font-size: 15px; }
 
