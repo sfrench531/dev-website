@@ -115,6 +115,31 @@
     </p>
   </div>
 </div>
+
+<script type="text/javascript"></script>
+$(document).ready(function() {
+
+$.ajax({
+  url:'https://muxymedium.firebaseio.com/kimono/api/8ki3rzyu/latest.json?auth=gwxpDLw2GLpIRXedavI1yvjwm6Vw2AKloXrSNXn9', // enter your API name and key in place of placeholders, without the []
+  crossDomain: true,
+  dataType: 'jsonp',
+  success: function(response) {
+    $.each(response.results.posts, function(index, value) { // the `posts` here is a reference to the Kimono collection
+      var newPost = $("#postTemplate").clone(); // clone our template
+      newPost.appendTo('.posts'); // append clone to our container with the class .posts
+      newPost.removeAttr('id'); // remove the unnecessary ID
+      newPost.find('.post-title a').attr('href', value.date.href).text(value.title); // input post title
+      newPost.find('.post-date').text(value.date.text); // input post date
+      newPost.find('.post-length').text(value.length); // input post reading time
+      newPost.show(); // reveal the post
+      return index < 4; // fetch only the latest 5 posts
+    });
+  },
+  error: function(jqXHR, textStatus, errorThrown) {
+    $('.posts').html('<article class="post-error">Ooops, something went wrong and posts could not be fetched. Pleae visit our blog at https://muxy.io</article>');
+  }
+});
+ </script>
       <section class="page-title blog-featured-img bg-color-overlay bg-color-overlay--1 text-center" style="background-image: url(img/blog/featured.jpg);">
         <div class="container">
           <div class="page-title__holder">
@@ -329,24 +354,3 @@
   
 </body>
 </html>
-
-$.ajax({
-  url:'https://muxymedium.firebaseio.com/kimono/api/8ki3rzyu/latest.json?auth=gwxpDLw2GLpIRXedavI1yvjwm6Vw2AKloXrSNXn9', // enter your API name and key in place of placeholders, without the []
-  crossDomain: true,
-  dataType: 'jsonp',
-  success: function(response) {
-    $.each(response.results.posts, function(index, value) { // the `posts` here is a reference to the Kimono collection
-      var newPost = $("#postTemplate").clone(); // clone our template
-      newPost.appendTo('.posts'); // append clone to our container with the class .posts
-      newPost.removeAttr('id'); // remove the unnecessary ID
-      newPost.find('.post-title a').attr('href', value.date.href).text(value.title); // input post title
-      newPost.find('.post-date').text(value.date.text); // input post date
-      newPost.find('.post-length').text(value.length); // input post reading time
-      newPost.show(); // reveal the post
-      return index < 4; // fetch only the latest 5 posts
-    });
-  },
-  error: function(jqXHR, textStatus, errorThrown) {
-    $('.posts').html('<article class="post-error">Ooops, something went wrong and posts could not be fetched. Pleae visit our blog at https://muxy.io</article>');
-  }
-});
