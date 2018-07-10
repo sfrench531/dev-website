@@ -2008,7 +2008,8 @@ img.mfp-img {
 
 .cc-link {
 	opacity: 1;
-	font-weight: 700; }
+	font-weight: 700;
+	text-decoration: none; }
 	.cc-link:hover, .cc-link:focus {
 		color: #699C9C; }
 
