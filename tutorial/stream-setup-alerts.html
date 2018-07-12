@@ -12,16 +12,16 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700' rel='stylesheet'>
 
   <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/font-icons.css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
 </head>
 
@@ -45,7 +45,7 @@
             <div class="nav__header">
               <!-- Logo -->
               <a href="index.html" class="logo-container flex-child">
-                <img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+                <img class="logo" src="../img/logo.png" srcset="../img/logo.png 1x, ../img/logo@2x.png 2x" alt="logo">
               </a>
 
               <!-- Mobile toggle -->
@@ -74,7 +74,7 @@
                   </ul>
                 </li>
                 <li class="active">
-                  <a href="tutorials.html">Tutorials</a>
+                  <a href="tutorial.html">Tutorials</a>
                 </li>
                 <li>
                   <a href="https://dev.muxy.io">Developers</a>
@@ -103,10 +103,10 @@
     <div class="content-wrapper oh">
 
       <!-- Page Title -->
-      <section class="page-title blog-featured-img bg-color-overlay bg-color-overlay--1 text-center" style="background-image: url(img/blog/featured.jpg);">
+      <section class="page-title blog-featured-img bg-color-overlay bg-color-overlay--1 text-center" style="background-image: url(../img/blog/featured.jpg);">
         <div class="container">
           <div class="page-title__holder">
-            <h1 class="page-title__title">Stream Setup: OBS</h1>
+            <h1 class="page-title__title">Stream Setup: Alerts</h1>
             <ul class="entry__meta">
               <li class="entry__meta-date">
                 April 13, 2018
@@ -150,20 +150,32 @@
                         </li>
                       </ul>
 
-                      <p>This series of tutorials will demonstrate how to set up a Twitch live stream from scratch on Windows. We’ll be using OBS as our capture software and Muxy for alerts. If you’ve already gotten started, feel free to skip to whatever part you need help with.</p>
+                      <p>This tutorial will go over creating Muxy alerts to display on your stream through OBS. Creating a new Alert Package wil create default follow, sub, donation, and host alerts all tied to a single URL for OBS.</p>
 
-                      <h2>Getting Started with OBS</h2>
+                      <h2>Muxy Alerts</h2>
 
+                      <p>Create your alerts:</p>
                       <ol>
-                        <li>Download OBS Studio from <a href="https://obsproject.com/download">the OBS download page</a></li>
-                        <li>Once downloaded, install and launch OBS.</li>
-                        <li>Next, add your stream key to OBS. If you don’t already have a Twitch account, <a href="https://secure.twitch.tv/signup">sign up for one here</a>. Log in to <a href="https://twitch.tv/login">Twitch</a>, then copy your stream key from the <a href="https://www.twitch.tv/dashboard/settings">Twitch settings page</a>.</li>
-                        <li>Go back to OBS and click on “Settings”.</li>
-                        <li>Go to “Stream” and select Twitch as your streaming service.</li>
-                        <li>Paste in your Twitch stream key and click “Apply”. OBS is now configured to stream to Twitch.</li>
+                        <li>Navigate to your <a href="https://u.muxy.io/dashboard/alertpackages">Muxy Alerts page</a>.</li>
+                        <li>Click "Create New Alert Package".</li>
+                        <li>Use the alert editor to customize your alerts by adding images, sounds, and text. <em>If you are comfortable with writing custom HTML/CSS, there are more editing options available in Advanced Mode.</em></li>
+                        <li>Repeat this process for your other alerts and save your changes.</li>
+                      </ol>
+                      <p>Display your alerts in OBS:</p>
+                      <ol>
+                        <li>When you are ready to test your Alert Package, navigate to your <a href="https://u.muxy.io/dashboard/alertpackages">Muxy Alerts page</a> and copy the Alert Package URL to your clipboard.</li>
+                        <li>Open OBS, click the "+" button under "Sources", and select "BrowserSource".</li>
+                        <li>Name your BrowserSource and click "OK".</li>
+                        <li>Paste the Alert Package URL into the BrowserSource URL field. Click "OK" to confirm your changes.</li>
+                        <li>Select the BrowserSource, then click and drag to reposition and scale the BrowserSource window to your desired size and dimensions.</li>
+                      </ol>
+                      <p>Test your alerts:</p>
+                      <ol>
+                        <li>Launch the <a href="https://u.muxy.io/live">Live Feed</a> to test and monitor your alerts.</li>
+                        <li>By selecting the event type icons in the upper right corner of the Live Feed you can access alert-type specific menu options, including testing.</li>
                       </ol>
 
-                      <p><em>For additional OBS setup info visit <a href="https://obsproject.com/wiki/">the OBS wiki</a>.</em></p>
+                      <p><em>For additional alert info visit <a href="https://muxy.uservoice.com/search?filter=articles&query=alerts">our Knowledge Base</a>.</em></p>
 
                     </div> <!-- end entry article -->
                   </div> <!-- end entry article wrap -->
@@ -175,11 +187,11 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <a href="single-post.html" class="entry-navigation__url entry-navigation--left">
-                        <img src="img/blog/prev_post.jpg" alt="" class="entry-navigation__img">
+                        <img src="../img/blog/prev_post.jpg" alt="" class="entry-navigation__img">
                         <div class="entry-navigation__body">
                           <i class="ui-arrow-left"></i>
                           <span class="entry-navigation__label">Previous Post</span>
-                          <h6 class="entry-navigation__title">How to design your first mobile app</h6>
+                          <h6 class="entry-navigation__title">Stream Setup: Tip Settings</h6>
                         </div>
                       </a>
                     </div>
@@ -188,9 +200,9 @@
                         <div class="entry-navigation__body">
                           <span class="entry-navigation__label">Next Post</span>
                           <i class="ui-arrow-right"></i>
-                          <h6 class="entry-navigation__title">Stream Setup: Tip Settings</h6>
+                          <h6 class="entry-navigation__title">Stream Setup: Ticker</h6>
                         </div>
-                        <img src="img/blog/next_post.jpg" alt="" class="entry-navigation__img">
+                        <img src="../img/blog/next_post.jpg" alt="" class="entry-navigation__img">
                       </a>
                     </div>
                   </div>
@@ -212,7 +224,7 @@
                 <div class="widget widget-about-us">
                   <!-- Logo -->
                   <a href="index.html" class="logo-container flex-child">
-                    <img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+                    <img class="logo" src="../img/logo.png" srcset="../img/logo.png 1x, ../img/logo@2x.png 2x" alt="logo">
                   </a>
                   <p class="mt-24 mb-32">We make live video interactive.</p>
                   <div class="socials">
@@ -275,15 +287,15 @@
 
 
   <!-- jQuery Scripts -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/scripts.js"></script>
-  <script src="js/login.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/scripts.js"></script>
+  <script src="../js/login.js"></script>
 
   <!-- Cookies -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script src="js/cookies.js"></script>
+  <script src="../js/cookies.js"></script>
 
 </body>
 </html>
